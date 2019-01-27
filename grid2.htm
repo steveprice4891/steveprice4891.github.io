@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta title content="Responsive webpage test">
+  <link rel="stylesheet" type="text/css" href="gridstyles.css">
+</head>
+
+<body>
+
+<div class="grid-container">
+  <div class="top">Research</div>
+  <div class="header"><h1>Mobility as a Service</h1>
+    by the Transport Committtee
+    <p>Published on 1 January 2019</p>
+  </div>
+
+  <div class="short"><h2>Short read</h2>
+    <p>
+      Faster fixed and mobile access to the internet and data services have changed how people communicate, find information and shop. They have also increased people's choices over how, where and when they access online content and services. Interest is growing among transport operators, academics, planners and policy makers about the effect this shift in consumer behaviour could have on the provision of transport services.
+    </p>
+      <p>
+        An idea that is already being piloted abroad and in the UK is Mobility as a Service (MaaS). MaaS is the term for the digital platforms (often smartphone apps) through which people can access a range of public, shared and private transport, using a system that integrates the planning, booking and paying for travel.
+      </p>
+  </div>
+<button class="collapsible"><h2>Show more</h2></button>
+  <div class="content">
+    <dl>
+      <dt>Coffee</dt>
+<dd>- black hot drink</dd>
+<dt>Milk</dt>
+<dd>- white cold drink</dd>
+    </dl>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </div>
+  <script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+  </script>
+  <div class="longread"><h2>Long Read</h2>
+  </div>
+  <div class="box1">
+    <h3><a href="https://publications.parliament.uk/pa/cm201719/cmselect/cmtrans/590/full-report.html">What is Mobility as a Service?</a></h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim adLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+    </P>
+  </div>
+  <div class="box2">
+    <h3>Box 2</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim adLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+    </P>
+  </div>
+  <div class="box3">
+    <h3>Box 3</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim adLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+    </P>
+  </div>
+  <div class="footer">Footer
+  </div>
+  </div>
+
+</body>
+</html>
